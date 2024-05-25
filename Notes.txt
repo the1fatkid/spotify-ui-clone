@@ -1,0 +1,81 @@
+-> body
+    /* Section 1:  Main Header (TOP) */
+    -> .mainHeader 
+        -> .left
+        -> .middle
+        -> .right
+
+    /* Section 2: Sidebar */    
+    -> .sidebarMenu
+        -> .libNav
+            -> .myLib
+                -> .libIcon
+                -> span (.yourLib)
+        -> .albumsToShow
+        -> .albumLib
+            -> .itemNav
+                -> .recents
+            -> .item
+                -> img (.imgSidebar)
+                -> .albumInfo
+                    -> .name
+                    -> .info
+            ->item
+
+    /* Section 3: Main Content */
+    -> .mainContent
+        -> nav
+        -> .recentAlbums
+        -> .cardHeading
+        -> .madeForYou
+            -> .card
+        -> .cardHeading
+        -> .bestOfArtists
+            -> .card
+
+    /* Section 4: Currect Song Info (Footer) */        
+    -> .currentSongInfo
+        -> .currentSong
+            -> .songInfo
+                -> .songName
+                -> .singer
+            -> .addSong
+        -> .playbackControls
+            -> .controls
+            -> .progress
+        -> .miscControls
+
+
+----------------------------------------------------------------------------------------------------------------
+
+Important Note: To make the scroll bar work, make sure therespective div has a defined height
+
+-------Adding styling to the scrollbar:
+    --CODE--
+
+/* .albumLib */
+.albumLib {
+    margin: 20px 0 70px 20px;
+    height: 300px; /* Set a fixed height */
+    overflow: auto; /* Enable scrolling */
+}
+
+/* Custom Scrollbar Styling */
+.albumLib::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.albumLib::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar color */
+    border-radius: 10px; /* Rounded edges */
+}
+
+.albumLib::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Scrollbar color on hover */
+}
+
+----------------------------------------------------------------------------------------------------------------
+
+Important Note: Do not hard code sizes of mainContent and sidebar. Start by giving them a height of 100vh and then provide appropriate margin/padding.
+
+----------------------------------------------------------------------------------------------------------------
