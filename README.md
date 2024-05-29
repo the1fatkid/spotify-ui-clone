@@ -1,6 +1,7 @@
 # Spotify UI Clone🎸🎹🎷
 
 A responsive frontend clone of the Spotify home page built with HTML and CSS. This project replicates the look and feel of Spotify's homepage but does not include any functionality. 
+
 ## Overview
 
 Spotify UI Clone is a project that mimics the frontend design of Spotify's home page. It aims to replicate the visual aspects and responsiveness of the original page using only HTML and CSS. 
