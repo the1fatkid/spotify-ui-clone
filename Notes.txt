@@ -1,3 +1,7 @@
+  ------- Spotify Clone Project -------
+
+==============================================================================================================
+
 -> body
     /* Section 1:  Main Header (TOP) */
     -> .mainHeader 
@@ -48,7 +52,7 @@
 
 ----------------------------------------------------------------------------------------------------------------
 
-Important Note: To make the scroll bar work, make sure therespective div has a defined height
+Important Note: To make the scroll bar work, make sure the respective div has a defined height
 
 -------Adding styling to the scrollbar:
     --CODE--
@@ -78,4 +82,93 @@ Important Note: To make the scroll bar work, make sure therespective div has a d
 
 Important Note: Do not hard code sizes of mainContent and sidebar. Start by giving them a height of 100vh and then provide appropriate margin/padding.
 
+----------------------------------------------------------------------------------------------------------------
+
+   !!REMEMBER!!
+
+-> Your CSS properties might not exactly look like the one used in the video, but trust the process and trust your skills. Keep practicing and you'll be able to replicate any website.
+
+----------------------------------------------------------------------------------------------------------------
+
+/* Adding icon to the title of the page */
+    <link rel="icon" href="images/logo.png">
+
+----------------------------------------------------------------------------------------------------------------    
+/* Overflow Property */
+The overflow CSS shorthand property sets the desired behavior when content does not fit in the parent element box (overflows) in the horizontal and/or vertical direction.
+
+    overflow: hidden;
+
+    Overflow content is clipped at the element's padding box. There are no scroll bars, and the clipped content is not visible (i.e., clipped content is hidden), but the content still exists.
+
+    overflow: auto;
+    
+    Overflow content is clipped at the element's padding box, and overflow content can be scrolled into view using scroll bars. Unlike scroll, user agents display scroll bars only if the content is overflowing. If content fits inside the element's padding box, it looks the same as with visible but still establishes a new formatting context. The element box is a scroll container.
+
+----------------------------------------------------------------------------------------------------------------
+
+/* Positioning the 3 Sections on the screen */
+
+    Contain all the 3 sections in a div called 'main' and make it a flexbox.
+
+    1. sidebar
+        -> give it a definite width (inspect from the original website) 
+
+    2. main-content
+        -> set it's flex property to 1 (flex:1)
+	 The flex-grow property is specified as a single <number>. This property specifies how much of the remaining space in the flex container should be assigned to the item (the flex grow factor).
+
+    3. music player
+        ->  to fix it to the bottom of the page, use the following properties:
+            position: fixed;  //this takes the element out of the normal flow of the document
+            bottom:0;  //element gets fixed at 0px from the bottom
+
+----------------------------------------------------------------------------------------------------------------
+
+/* Sticky Top Navbar */
+
+    position: sticky;
+    top:0; 
+ 
+    ------------------------------------------------------------------------------------------------------------
+    /* z-index */
+
+    z-index in CSS is a property that controls the stacking order of elements on a webpage along the z-axis (depth), allowing you to specify which elements should appear in front of or behind others. 
+    
+    The z-index property only applies to elements with a positioned value other than static (i.e., relative, absolute, fixed, or sticky).
+
+----------------------------------------------------------------------------------------------------------------
+
+/* Inheritance of Flexbox Properties */
+
+By default, making a parent element a flex container using display: flex or display: inline-flex does not automatically apply flexbox properties to its grandchildren. Flexbox properties only affect the direct children of the flex container.
+
+----------------------------------------------------------------------------------------------------------------
+
+/* Progress bar Appearance */
+
+(I found it a bit confusing and difficult to grasp. Learn more if you need it for some project)
+
+Go to (https://www.quirksmode.org/blog/archives/2015/11/styling_and_scr.html) to learn more
+
+Step1: Set appearance: none; so that pre-applied styles are removed
+
+Step 2: Use the pseudo-elements "::-webkit-slider-runnable-track" and "::-webkit-slider-thumb" to give the range element your custom styling.
+
+----------------------------------------------------------------------------------------------------------------    
+/* Negative margin value */
+
+The margin-top CSS property sets the top margin of an element, which affects its spacing relative to other elements. The difference between margin-top: 6px and margin-top: -6px lies in how they manipulate the space around the element:
+
+    -- margin-top: 6px
+
+    -> Positive Value: Adds 6 pixels of space above the element.
+    -> Effect: Pushes the element down by 6 pixels, creating more space above it.
+    -> Usage: Commonly used to add spacing between elements to prevent them from being too close together.
+
+    -- margin-top: -6px
+
+    -> Negative Value: Subtracts 6 pixels of space above the element.
+    -> Effect: Pulls the element up by 6 pixels, reducing the space above it. If there isn't enough space to reduce, it overlaps the preceding element.
+    ->Usage: Can be used to create overlapping effects or to reduce unintended whitespace above elements.
 ----------------------------------------------------------------------------------------------------------------

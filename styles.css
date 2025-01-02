@@ -1,6 +1,7 @@
-/* html{
-    min-width: 700px;
-} */
+html{
+    /* min-width: 700px; */
+    min-width: 375px;
+}
 body{
     margin:0;
     padding:0;
@@ -16,6 +17,7 @@ body{
 .mainHeader{
     height: 65px;
     width:100%;
+    min-width: 375px;
     position:fixed;
     top:0; 
     display:flex;
@@ -71,6 +73,10 @@ body{
     display:flex;
     align-items: center;
 }
+.sub-left, .sub-right{
+    display: flex;
+    align-items: center;
+}
 .right i{
     color:#b3b3b3;
     margin-right: 20px;
@@ -107,6 +113,11 @@ body{
     }
     .right{
         margin-left: auto;
+    }
+}
+@media(max-width: 576px){
+    .sub-left{
+        display: none;
     }
 }
 /* .middle .hide:hover{
@@ -179,7 +190,7 @@ body{
 
 /* .sidebar -> .albumLib */
 .albumLib{
-    margin:20px 0 70px 20px;
+    padding:20px 20px 70px 20px;
     height:700px;
     overflow:hidden;
 }
@@ -231,8 +242,6 @@ body{
 .item{
     display:flex;
     margin-top:12px;
-    margin-right: 10px;
-    padding:5px;
     border-radius: 5px;
 }
 .item:hover{
@@ -282,6 +291,11 @@ body{
     }
     .libNav .libIcon, .item .imgSidebar{
         margin-right:0;
+    }
+}
+@media(max-width: 576px){
+    .sidebarMenu{
+        display:none;
     }
 }
 
@@ -361,15 +375,19 @@ body{
 .recentAlbums .item:hover .fa-circle-play{
     display:inline;
 }
-@media(max-width:1236px){
+
+@media (max-width: 1380px){
     .recentAlbums{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows:repeat(4, 1fr);
     }
-    .recentAlbums .item{
-        min-width:285px;
+}
+@media (max-width: 1000px){
+    .recentAlbums .item:hover .fa-circle-play{
+        display:none;
     }
 }
+
 
     /* .mainContent -> .cardHeading */
 .cardHeading{

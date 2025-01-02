@@ -1,343 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify</title>
-    <link rel="icon" href="images/logo.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Signika:wght@300..700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Signika:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Section 1: Main Header (TOP)-->
     <header class="mainHeader">
-        <div class="left">
-            <i class="fa-solid fa-ellipsis"></i>
-            <i class="fa-solid fa-angle-left"></i>
-            <i class="fa-solid fa-angle-right"></i>
+      <div class="left">
+        <i class="fa-solid fa-ellipsis"></i>
+        <i class="fa-solid fa-angle-left"></i>
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+      <div class="middle">
+        <div></div>
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-magnifying-glass hide"></i>
+        <input
+          type="search"
+          placeholder="&nbsp;&nbsp;What do you want to play?"
+        />
+      </div>
+      <div class="right">
+        <div class="sub-left">
+          <i class="fa-regular fa-bell"></i>
+          <i class="fa-solid fa-users"></i>
+          <img class="profile" src="images/profilepic.jpg" alt="" />
         </div>
-        <div class="middle">
-            <div></div>
-            <i class="fa-solid fa-house"></i>
-            <i class="fa-solid fa-magnifying-glass hide"></i>
-            <input type="search" placeholder="&nbsp;&nbsp;What do you want to play?">
+
+        <div class="sub-right">
+          <i class="fa-solid fa-window-minimize"></i>
+          <i class="fa-regular fa-window-maximize"></i>
+          <i class="fa-solid fa-xmark"></i>
         </div>
-        <div class="right">
-            <i class="fa-regular fa-bell"></i>
-            <i class="fa-solid fa-users"></i>
-            <img class="profile" src="images/profilepic.jpg" alt="">
-            <i class="fa-solid fa-window-minimize"></i>
-            <i class="fa-regular fa-window-maximize"></i>
-            <i class="fa-solid fa-xmark"></i>
-        </div>
+      </div>
     </header>
 
     <!-- Section 2: Sidebar -->
     <section class="sidebarMenu">
-        <div class="libNav">
-            <div class="myLib">
-                <img class="libIcon" src="images/library_icon.png" alt="">
-                <span class="yourLib">Your Library</span>
-            </div>
-            <i class="fa-solid fa-plus"></i>
-            <i class="fa-solid fa-arrow-right"></i>
+      <div class="libNav">
+        <div class="myLib">
+          <img class="libIcon" src="images/library_icon.png" alt="" />
+          <span class="yourLib">Your Library</span>
         </div>
+        <i class="fa-solid fa-plus"></i>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
 
-        <div class="albumsToShow">
-            <button>Playlists</button>
-            <button>Albums</button>
-            <button>Podcasts</button>
-            <button><i class="fa-solid fa-angle-right"></i></button>
-        </div>
+      <div class="albumsToShow">
+        <button>Playlists</button>
+        <button>Albums</button>
+        <button>Podcasts</button>
+        <button><i class="fa-solid fa-angle-right"></i></button>
+      </div>
 
-        <div class="albumLib">
-            <!-- Item 0 -->
-            <div class="itemNav">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <div class="recents">
-                    <p>Recents</p>
-                    <i class="fa-solid fa-list-ul"></i>
-                </div>  
-            </div>
-            <!-- Item 1 -->
-            <div class="item">
-                <img class="imgSidebar" src="images/item1.jpg" alt="">
-                <div class="albumInfo">
-                    <p class="name">Liked Songs</p>
-                    <p class="info"><i class="fa-solid fa-thumbtack"></i>Playlist<span>.</span>620 songs</p>
-                </div>
-            </div>
-            <!-- Item 2 -->
-            <div class="item">
-                <img class="imgSidebar" src="images/item2.jpg" alt="">
-                <div class="albumInfo">
-                    <p class="name">miShmAsH</p>
-                    <p class="info"><i class="fa-solid fa-thumbtack"></i>Playlist<span>.</span>Shivika</p>
-                </div>
-            </div>
-            <!-- Item 3 -->
-            <div class="item">
-                <img class="imgSidebar" src="images/item3.jpg" alt="">
-                <div class="albumInfo">
-                    <p class="name">Barren Lands</p>
-                    <p class="info">Playlist<span>.</span>Shivika</p>
-                </div>
-            </div>
-            <!-- Item 4 -->
-            <div class="item">
-                <img class="imgSidebar" src="images/item5.jpg" alt="">
-                <div class="albumInfo">
-                    <p class="name">Your Top Songs 2023</p>
-                    <p class="info">Playlist<span>.</span>Spotify</p>
-                </div>
-            </div>
-            <!-- Item 5 -->
-            <div class="item">
-                <img class="artist imgSidebar" src="images/item6.jpg" alt="">
-                <div class="albumInfo">
-                    <p class="name">Lauv</p>
-                    <p class="info">Playlist<span>.</span>Artist</p>
-                </div>
-            </div>
-            <!-- Item 6 -->
-            <div class="item">
-                <img class="imgSidebar" src="images/item7.jpg" alt="">
-                <div class="albumInfo">
-                    <p class="name">Zack Bryan</p>
-                    <p class="info">Album<span>.</span>Zack Bryan</p>
-                </div>
-            </div>
-            <!-- Item 7 -->
-            <div class="item">
-                <img class="imgSidebar" src="images/item4.jpg" alt="">
-                <div class="albumInfo">
-                    <p class="name">RnB</p>
-                    <p class="info">Album<span>.</span>Shivika</p>
-                </div>
-            </div>
-            <!-- Item 8 -->
-            <div class="item">
-                <img class="imgSidebar" src="images/item8.jpg" alt="">
-                <div class="albumInfo">
-                    <p class="name">This is James Bay</p>
-                    <p class="info">Playlist<span>.</span>Spotify</p>
-                </div>
-            </div>
-            <hr>
-            <hr>
+      <div class="albumLib">
+        <!-- Item 0 -->
+        <div class="itemNav">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="recents">
+            <p>Recents</p>
+            <i class="fa-solid fa-list-ul"></i>
+          </div>
         </div>
+        <!-- Item 1 -->
+        <div class="item">
+          <img class="imgSidebar" src="images/item1.jpg" alt="" />
+          <div class="albumInfo">
+            <p class="name">Liked Songs</p>
+            <p class="info">
+              <i class="fa-solid fa-thumbtack"></i>Playlist<span>.</span>620
+              songs
+            </p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="item">
+          <img class="imgSidebar" src="images/item2.jpg" alt="" />
+          <div class="albumInfo">
+            <p class="name">miShmAsH</p>
+            <p class="info">
+              <i class="fa-solid fa-thumbtack"></i>Playlist<span>.</span>Shivika
+            </p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="item">
+          <img class="imgSidebar" src="images/item3.jpg" alt="" />
+          <div class="albumInfo">
+            <p class="name">Barren Lands</p>
+            <p class="info">Playlist<span>.</span>Shivika</p>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="item">
+          <img class="imgSidebar" src="images/item5.jpg" alt="" />
+          <div class="albumInfo">
+            <p class="name">Your Top Songs 2023</p>
+            <p class="info">Playlist<span>.</span>Spotify</p>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="item">
+          <img class="artist imgSidebar" src="images/item6.jpg" alt="" />
+          <div class="albumInfo">
+            <p class="name">Lauv</p>
+            <p class="info">Playlist<span>.</span>Artist</p>
+          </div>
+        </div>
+        <!-- Item 6 -->
+        <div class="item">
+          <img class="imgSidebar" src="images/item7.jpg" alt="" />
+          <div class="albumInfo">
+            <p class="name">Zack Bryan</p>
+            <p class="info">Album<span>.</span>Zack Bryan</p>
+          </div>
+        </div>
+        <!-- Item 7 -->
+        <div class="item">
+          <img class="imgSidebar" src="images/item4.jpg" alt="" />
+          <div class="albumInfo">
+            <p class="name">RnB</p>
+            <p class="info">Album<span>.</span>Shivika</p>
+          </div>
+        </div>
+        <!-- Item 8 -->
+        <div class="item">
+          <img class="imgSidebar" src="images/item8.jpg" alt="" />
+          <div class="albumInfo">
+            <p class="name">This is James Bay</p>
+            <p class="info">Playlist<span>.</span>Spotify</p>
+          </div>
+        </div>
+        <hr />
+        <hr />
+      </div>
     </section>
 
     <!-- Section 3: Main Content -->
     <main class="mainContent">
-        <nav>
-            <ul>
-                <li class="active">All</li>
-                <li>Music</li>
-                <li>Podcasts</li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li class="active">All</li>
+          <li>Music</li>
+          <li>Podcasts</li>
+        </ul>
+      </nav>
 
-        <div class="recentAlbums">
+      <div class="recentAlbums">
+        <!-- Item 1 -->
+        <div class="item">
+          <img src="images/item1.jpg" alt="" />
+          <div class="albumInfo">
+            <p class="name">Liked Songs</p>
+          </div>
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+        <!-- Item 2 -->
+        <div class="item">
+          <img src="images/item2.jpg" alt="" />
+          <div class="albumInfo">
+            <p class="name">miShmAsH</p>
+          </div>
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+        <!-- Item 3 -->
+        <div class="item">
+          <img src="images/item3.jpg" alt="" />
+          <div class="albumInfo">
+            <p class="name">Barren Lands</p>
+          </div>
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+        <!-- Item 4 -->
+        <div class="item">
+          <img src="images/item5.jpg" alt="" />
+          <div class="albumInfo">
+            <p class="name">Your Top Songs 2023</p>
+          </div>
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+        <!-- Item 5 -->
+        <div class="item">
+          <img src="images/item6.jpg" alt="" />
+          <div class="albumInfo">
+            <p class="name">Lauv</p>
+          </div>
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+        <!-- Item 6 -->
+        <div class="item">
+          <img src="images/item7.jpg" alt="" />
+          <div class="albumInfo">
+            <p class="name">Zack Bryan</p>
+          </div>
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+        <!-- Item 7 -->
+        <div class="item">
+          <img src="images/item4.jpg" alt="" />
+          <div class="albumInfo">
+            <p class="name">RnB</p>
+          </div>
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+        <!-- Item 8 -->
+        <div class="item">
+          <img src="images/item8.jpg" alt="" />
+          <div class="albumInfo">
+            <p class="name">This is James Bay</p>
+          </div>
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+      </div>
 
-            <!-- Item 1 -->
-            <div class="item">
-                <img src="images/item1.jpg" alt="">
-                <div class="albumInfo">
-                    <p class="name">Liked Songs</p>
-                </div>
-                <i class="fa-solid fa-circle-play"></i>
-            </div>
-            <!-- Item 2 -->
-            <div class="item">
-                <img src="images/item2.jpg" alt="">
-                <div class="albumInfo">
-                    <p class="name">miShmAsH</p>
-                </div>
-                <i class="fa-solid fa-circle-play"></i>
-            </div>
-            <!-- Item 3 -->
-            <div class="item">
-                <img src="images/item3.jpg" alt="">
-                <div class="albumInfo">
-                    <p class="name">Barren Lands</p>
-                </div>
-                <i class="fa-solid fa-circle-play"></i>
-            </div>
-            <!-- Item 4 -->
-            <div class="item">
-                <img src="images/item5.jpg" alt="">
-                <div class="albumInfo">
-                    <p class="name">Your Top Songs 2023</p>
-                </div>
-                <i class="fa-solid fa-circle-play"></i>
-            </div>
-            <!-- Item 5 -->
-            <div class="item">
-                <img src="images/item6.jpg" alt="">
-                <div class="albumInfo">
-                    <p class="name">Lauv</p>
-                </div>
-                <i class="fa-solid fa-circle-play"></i>
-            </div>
-            <!-- Item 6 -->
-            <div class="item">
-                <img src="images/item7.jpg" alt="">
-                <div class="albumInfo">
-                    <p class="name">Zack Bryan</p>
-                </div>
-                <i class="fa-solid fa-circle-play"></i>
-            </div>
-            <!-- Item 7 -->
-            <div class="item">
-                <img src="images/item4.jpg" alt="">
-                <div class="albumInfo">
-                    <p class="name">RnB</p>
-                </div>
-                <i class="fa-solid fa-circle-play"></i>
-            </div>
-            <!-- Item 8 -->
-            <div class="item">
-                <img src="images/item8.jpg" alt="">
-                <div class="albumInfo">
-                    <p class="name">This is James Bay</p>
-                </div>
-                <i class="fa-solid fa-circle-play"></i>
-            </div>
+      <div class="cardHeading">
+        <h4>Made For Shivika</h4>
+        <p>Show all</p>
+      </div>
+      <div class="madeForYou">
+        <!-- Card 1 -->
+        <div class="card c1">
+          <img src="images/dailyMix1.jpg" alt="" />
+          <h5>Daily Mix 1</h5>
+          <p></p>
         </div>
+        <!-- Card 2 -->
+        <div class="card c2">
+          <img src="images/dailyMix2.jpg" alt="" />
+          <h5>Daily Mix 2</h5>
+          <p></p>
+        </div>
+        <!-- Card 3 -->
+        <div class="card c3">
+          <img src="images/dailyMix3.jpg" alt="" />
+          <h5>Daily Mix 3</h5>
+          <p></p>
+        </div>
+        <!-- Card 4 -->
+        <div class="card c4">
+          <img src="images/dailyMix4.jpg" alt="" />
+          <h5>Daily Mix 4</h5>
+          <p></p>
+        </div>
+        <!-- Card 5 -->
+        <div class="card c5">
+          <img src="images/dailyMix5.jpg" alt="" />
+          <h5>Daily Mix 5</h5>
+          <p></p>
+        </div>
+        <!-- Card 6 -->
+        <div class="card c6">
+          <img src="images/dailyMix6.jpg" alt="" />
+          <h5>Daily Mix 6</h5>
+          <p></p>
+        </div>
+      </div>
 
-        <div class="cardHeading">
-            <h4>Made For Shivika</h4>
-            <p>Show all</p>
+      <div class="cardHeading">
+        <h4>Best Of Artists</h4>
+        <p>Show all</p>
+      </div>
+      <div class="bestOfArtists">
+        <!-- Card 1 -->
+        <div class="card c1">
+          <img src="images/thisIs1.jpg" alt="" />
+          <h5>This Is Future</h5>
+          <p>This is Future. The essential tracks, all in one playlist.</p>
         </div>
-        <div class="madeForYou">
-            <!-- Card 1 -->
-            <div class="card c1">
-                <img src="images/dailyMix1.jpg" alt="">
-                <h5>Daily Mix 1</h5>
-                <p></p>
-            </div>
-             <!-- Card 2 -->
-             <div class="card c2">
-                <img src="images/dailyMix2.jpg" alt="">
-                <h5>Daily Mix 2</h5>
-                <p></p>
-            </div>
-             <!-- Card 3 -->
-             <div class="card c3">
-                <img src="images/dailyMix3.jpg" alt="">
-                <h5>Daily Mix 3</h5>
-                <p></p>
-            </div>
-             <!-- Card 4 -->
-             <div class="card c4">
-                <img src="images/dailyMix4.jpg" alt="">
-                <h5>Daily Mix 4</h5>
-                <p></p>
-            </div>
-             <!-- Card 5 -->
-             <div class="card c5">
-                <img src="images/dailyMix5.jpg" alt="">
-                <h5>Daily Mix 5</h5>
-                <p></p>
-            </div>
-             <!-- Card 6 -->
-             <div class="card c6">
-                <img src="images/dailyMix6.jpg" alt="">
-                <h5>Daily Mix 6</h5>
-                <p></p>
-            </div>
+        <!-- Card 2 -->
+        <div class="card c2">
+          <img src="images/thisIs2.jpg" alt="" />
+          <h5>This is Hozier</h5>
+          <p>This is Hozier. The essential tracks, all in one playlist.</p>
         </div>
-
-        <div class="cardHeading">
-            <h4>Best Of Artists</h4>
-            <p>Show all</p>
+        <!-- Card 3 -->
+        <div class="card c3">
+          <img src="images/thisIs3.jpg" alt="" />
+          <h5>This Is Ariana</h5>
+          <p>
+            This is Ariane Grande. The essential tracks, all in one playlist.
+          </p>
         </div>
-        <div class="bestOfArtists">
-             <!-- Card 1 -->
-             <div class="card c1">
-                <img src="images/thisIs1.jpg" alt="">
-                <h5>This Is Future</h5>
-                <p>This is Future. The essential tracks, all in one playlist.</p>
-            </div>
-             <!-- Card 2 -->
-             <div class="card c2">
-                <img src="images/thisIs2.jpg" alt="">
-                <h5>This is Hozier</h5>
-                <p>This is Hozier. The essential tracks, all in one playlist.</p>
-            </div>
-             <!-- Card 3 -->
-             <div class="card c3">
-                <img src="images/thisIs3.jpg" alt="">
-                <h5>This Is Ariana</h5>
-                <p>This is Ariane Grande. The essential tracks, all in one playlist.</p>
-            </div>
-             <!-- Card 4 -->
-             <div class="card c4">
-                <img src="images/thisIs4.jpg" alt="">
-                <h5>This Is Harry</h5>
-                <p>This is Harry Styles. The essential tracks, all in one playlist.</p>
-            </div>
-             <!-- Card 5 -->
-             <div class="card c5">
-                <img src="images/thisIs5.jpg" alt="">
-                <h5>This Is Rihhana</h5>
-                <p>This is Rihanna. The essential tracks, all in one playlist.</p>
-            </div>
-             <!-- Card 6 -->
-             <div class="card c6">
-                <img src="images/thisIs6.jpg" alt="">
-                <h5>This Is SZA</h5>
-                <p>This is SZA. The essential tracks, all in one playlist.</p>
-            </div>
+        <!-- Card 4 -->
+        <div class="card c4">
+          <img src="images/thisIs4.jpg" alt="" />
+          <h5>This Is Harry</h5>
+          <p>
+            This is Harry Styles. The essential tracks, all in one playlist.
+          </p>
         </div>
-        <hr>
+        <!-- Card 5 -->
+        <div class="card c5">
+          <img src="images/thisIs5.jpg" alt="" />
+          <h5>This Is Rihhana</h5>
+          <p>This is Rihanna. The essential tracks, all in one playlist.</p>
+        </div>
+        <!-- Card 6 -->
+        <div class="card c6">
+          <img src="images/thisIs6.jpg" alt="" />
+          <h5>This Is SZA</h5>
+          <p>This is SZA. The essential tracks, all in one playlist.</p>
+        </div>
+      </div>
+      <hr />
     </main>
-  
-    
+
     <!-- Section 4: Currect Song Footer -->
     <footer class="currentSongInfo">
-        <div class="currentSong">
-            <img src="images/daylight.jpg" alt="">
-            <div class="songInfo">
-                <p class="songName">Daylight</p>
-                <p class="singer">David Kushner</p>
-            </div>
-            <div class="addSong"><i class="fa-solid fa-circle-plus"></i></div>
+      <div class="currentSong">
+        <img src="images/daylight.jpg" alt="" />
+        <div class="songInfo">
+          <p class="songName">Daylight</p>
+          <p class="singer">David Kushner</p>
         </div>
-        <div class="playbackControls">
-            <div class="controls">
-                <img src="images/player_icon1.png" alt="">
-                <i class="fa-solid fa-backward-step"></i>
-                <i class="fa-solid fa-circle-play"></i>
-                <i class="fa-solid fa-forward-step"></i>
-                <img src="images/player_icon5.png" alt="">
-            </div>
-            <div class="progress">
-                <span>3:28</span>
-                <input type="range" name="" id="" min="0" max="10" value="8">
-                <span>3:59</span>
-            </div>
+        <div class="addSong"><i class="fa-solid fa-circle-plus"></i></div>
+      </div>
+      <div class="playbackControls">
+        <div class="controls">
+          <img src="images/player_icon1.png" alt="" />
+          <i class="fa-solid fa-backward-step"></i>
+          <i class="fa-solid fa-circle-play"></i>
+          <i class="fa-solid fa-forward-step"></i>
+          <img src="images/player_icon5.png" alt="" />
         </div>
-        <div class="miscControls">
-            <i class="fa-solid fa-microphone"></i>
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-volume-high"></i>
-            <input type="range" name="" id="">
-            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+        <div class="progress">
+          <span>3:28</span>
+          <input type="range" name="" id="" min="0" max="10" value="8" />
+          <span>3:59</span>
         </div>
+      </div>
+      <div class="miscControls">
+        <i class="fa-solid fa-microphone"></i>
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-volume-high"></i>
+        <input type="range" name="" id="" />
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
